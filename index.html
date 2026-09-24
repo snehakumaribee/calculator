@@ -5,38 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calculator</title>
-    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h6>CALCULATOR</h6>
+    <h1>CALCULATOR</h1>
+    <h1 id="screen">whimsy</h1>
     <div id="row1">
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button>x</button>
+        <button onclick="entervalue()">7</button>
+        <button onclick="entervalue()">8</button>
+        <button onclick="entervalue()">9</button>
+        <button onclick="entervalue()">/</button>
     </div>
     <div id="row2">
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>-</button>
+        <button onclick="entervalue()">4</button>
+        <button onclick="entervalue()">5</button>
+        <button onclick="entervalue()">6</button>
+        <button onclick="entervalue()">x</button>
     </div>
     <div id="row3">
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>+</button>
+        <button onclick="entervalue()">1</button>
+        <button onclick="entervalue()">2</button>
+        <button onclick="entervalue()">3</button>
+        <button onclick="entervalue()">-</button>
     </div>
     <div id="row4">
-        <button>.</button>
-        <button>0</button>
-        <button>back</button>
-        <button>/</button>
+        <button onclick="entervalue()">0</button>
+        <button onclick="entervalue()">.</button>
+        <button onclick="entervalue()">=</button>
+        <button onclick="entervalue()">+</button>
     </div>
     <div id="row5">
-        <button>clear</button>
-        <button>=</button>
+        <button onclick="entervalue()" id="clear">clear</button>
+        <button onclick="entervalue()" id="back">back</button>
     </div>
 </body>
 
