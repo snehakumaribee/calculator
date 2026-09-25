@@ -9,36 +9,39 @@
 </head>
 
 <body>
-    <h1>CALCULATOR</h1>
-    <h1 id="screen">whimsy</h1>
-    <div id="row1">
-        <button onclick="entervalue()">7</button>
-        <button onclick="entervalue()">8</button>
-        <button onclick="entervalue()">9</button>
-        <button onclick="entervalue()">/</button>
+    <div id="calculator">
+        <h1>CALCULATOR</h1>
+        <input id="screen" readonly>
+        <div id="row1">
+            <button onclick="entervalue('7')">7</button>
+            <button onclick="entervalue('8')">8</button>
+            <button onclick="entervalue('9')">9</button>
+            <button onclick="entervalue('/')" class="operator">/</button>
+        </div>
+        <div id="row2">
+            <button onclick="entervalue('4')">4</button>
+            <button onclick="entervalue('5')">5</button>
+            <button onclick="entervalue('6')">6</button>
+            <button onclick="entervalue('*')" class="operator">x</button>
+        </div>
+        <div id="row3">
+            <button onclick="entervalue('1')">1</button>
+            <button onclick="entervalue('2')">2</button>
+            <button onclick="entervalue('3')">3</button>
+            <button onclick="entervalue('-')" class="operator">-</button>
+        </div>
+        <div id="row4">
+            <button onclick="entervalue('0')">0</button>
+            <button onclick="entervalue('.')">.</button>
+            <button onclick="equalto()" id="equal">=</button>
+            <button onclick="entervalue('+')" class="operator">+</button>
+        </div>
+        <div id="row5">
+            <button onclick="clearscreen()" id="clear">clear</button>
+            <button onclick="back()" id="back">back</button>
+        </div>
     </div>
-    <div id="row2">
-        <button onclick="entervalue()">4</button>
-        <button onclick="entervalue()">5</button>
-        <button onclick="entervalue()">6</button>
-        <button onclick="entervalue()">x</button>
-    </div>
-    <div id="row3">
-        <button onclick="entervalue()">1</button>
-        <button onclick="entervalue()">2</button>
-        <button onclick="entervalue()">3</button>
-        <button onclick="entervalue()">-</button>
-    </div>
-    <div id="row4">
-        <button onclick="entervalue()">0</button>
-        <button onclick="entervalue()">.</button>
-        <button onclick="entervalue()">=</button>
-        <button onclick="entervalue()">+</button>
-    </div>
-    <div id="row5">
-        <button onclick="entervalue()" id="clear">clear</button>
-        <button onclick="entervalue()" id="back">back</button>
-    </div>
+    <script src="style.js"></script>
 </body>
 
 </html>

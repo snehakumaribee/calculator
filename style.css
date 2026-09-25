@@ -1,7 +1,15 @@
-body {
-    background-color: beige;
+#calculator {
+    background-color: rgb(186, 77, 101);
+    height: 400px;
+    width: 250px;
+    border-radius: 1cm;
     border: solid;
     border-color: #621E3E;
+
+}
+
+body {
+    background-color: beige;
     border-radius: 1cm;
     height: 400px;
     width: 250px;
@@ -10,30 +18,33 @@ body {
 }
 
 h1 {
-    color: #621E3E;
+    color: #5f052f;
     margin: 11px;
 }
 
 button {
-    color: #D9828D;
-    background-color: #621E3E;
+    color: rgb(155, 61, 75);
+    background-color: rgb(205, 215, 171);
     height: 40px;
-    width:  45px;
+    width: 45px;
     margin-left: 9px;
     font-size: large;
     font-family: fantasy;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 #screen {
     border: solid;
     border-color: #621E3E;
     height: 50px;
+    width: 220px;
     text-align: right;
-    
-    color: #a0546f;
-    background-color: rgb(226, 239, 245);
+    font-size: 40px;
+    color: rgb(155, 61, 75);
+    background-color: rgb(205, 229, 240);
     margin-bottom: 20px;
+    margin-left: 11px;
 }
 
 #row1 {
@@ -47,7 +58,7 @@ button {
     height: 30px;
     width: 250px;
     margin-left: 7px;
-   margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 #row3 {
@@ -73,10 +84,18 @@ button {
 
 #clear {
     width: 103px;
-    background-color: rgb(215, 244, 195);
+    background-color: rgb(212, 149, 191);
 }
 
 #back {
     width: 103px;
-    background-color: rgb(215, 244, 195);
+    background-color: rgb(212, 149, 191);
+}
+
+.operator {
+    background-color: rgb(169, 126, 169);
+}
+
+#equal {
+    background-color: rgb(169, 167, 205);
 }
